@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>-WEB予約- みなみ歯科クリニック</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <!-- <link rel="”icon”" href="" /> -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <!-- flatpickr css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!--flatpickr-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script defer src="./js/slick.min.js"></script>
+    <script defer src="./js/flatpickr.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header_inner">
+        <h1 class="header_logo">
+          <a href="">
+            <img src="./images/common/logo.svg" alt="logo" />
+          </a>
+        </h1>
+        <nav class="header_nav">
+          <ul class="header_nav_list">
+            <li class="header_nav_link header_nav_link_01">
+              <a href="index.html">ホーム</a>
+            </li>
+            <li class="header_nav_link header_nav_link_02">
+              <a href="about.html">当院について</a>
+            </li>
+            <li class="header_nav_link header_nav_link_03">
+              <a href="medical.html">診療案内</a>
+            </li>
+            <li class="header_nav_link header_nav_link_04">
+              <a href="staff.html">スタッフ紹介</a>
+            </li>
+            <li class="header_nav_link header_nav_link_05">
+              <a href="blog.html">スタッフブログ</a>
+            </li>
+            <li class="header_nav_link header_nav_link_06 is_active">
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+          <div class="header_nav_right">
+            <div class="header_nav_address">
+              〒166-0001 東京都杉並区阿佐谷北7-3-1
+            </div>
+            <div class="header_nav_tel">03-1234-5678</div>
+          </div>
+        </nav>
+        <div class="drawer_button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer_menu">
+      <div class="drawer_menu_inner">
+        <div class="drawer_menu_header">
+          <a href="" class="drawer_logo">
+            <img src="./images/common/logo-drawer.svg" alt="logo" />
+          </a>
+        </div>
+        <ul class="drawer_menu_list">
+          <li class="drawer_menu_link menu_1">
+            <a href="index.html"
+              ><img src="./images/common/icon-01sp.svg" alt="icon" /><span
+                >ホーム</span
+              ></a
+            >
+          </li>
+          <li class="drawer_menu_link menu_2">
+            <a href="about.html"
+              ><img src="./images/common/icon-02sp.svg" alt="icon" /><span
+                >当院について</span
+              ></a
+            >
+          </li>
+          <li class="drawer_menu_link menu_3">
+            <a href="medical.html"
+              ><img src="./images/common/icon-03sp.svg" alt="icon" /><span
+                >診療案内</span
+              ></a
+            >
+          </li>
+          <li class="drawer_menu_link menu_4">
+            <a href="staff.html"
+              ><img src="./images/common/icon-04sp.svg" alt="icon" /><span
+                >スタッフ紹介</span
+              ></a
+            >
+          </li>
+          <li class="drawer_menu_link menu_5">
+            <a href="blog.html"
+              ><img src="./images/common/icon-05sp.svg" alt="icon" /><span
+                >スタッフブログ</span
+              ></a
+            >
+          </li>
+          <li class="drawer_menu_link menu_6">
+            <a href="contact.html"
+              ><img src="./images/common/icon-06sp.svg" alt="icon" /><span
+                >お問い合わせ</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 予約ボタンSP用 -->
+    <div class="reserve_button_sp">
+      <div class="reserve_button_tel">
+        <a href="tel:03-1234-5678">03-1234-5678</a>
+      </div>
+      <a href="web.html" class="reserve_button_web"
+        >WEB予約<span>はこちら</span></a
+      >
+    </div>
+
+    <!-- head -->
+    <section class="lower_head">
+      <div class="lower_head_container">
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset="/images/contact/page-contact_top-sp.jpg"
+          />
+          <img src="/images/contact/page-contact_top.jpg" alt="mv" />
+        </picture>
+        <div class="lower_title_box">
+          <h2 class="lower_title">WEB予約</h2>
+          <p class="lower_sub_title">RESERVE</p>
+        </div>
+      </div>
+      <div class="breadcrumbs">
+        <a href="index.html">ホーム</a><span> ＞ </span>
+        <div>WEB予約</div>
+      </div>
+      <a href="web.html" class="reserve_button">
+        <img src="images/common/icon-pc.svg" alt="icon" />
+        <span>WEB予約はこちら</span>
+      </a>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="contact contact_web">
+      <div class="contact_inner">
+        <div class="contact_container">
+          <div class="web_contact_content_wrap">
+            <h2 class="web_contact_title">お電話でのご予約/ご相談</h2>
+            <div class="header_nav_tel web_contact_tel">03-1234-5678</div>
+            <span>(年中無休 AM9:00〜PM22:00)</span>
+            <div class="contact_head web_contact_head">
+              お急ぎの方は電話での連絡がスムーズです。<br />混雑状況によっては当日受診をご利用いただけない場合がございます。<br />あらかじめご了承ください。
+            </div>
+          </div>
+          <div class="web_contact_content_wrap">
+            <h2 class="web_contact_title">メールでのご予約/ご相談</h2>
+            <div class="contact_head web_contact_head">
+              【ご予約に関しての注意点】<br />メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br />※24時間以内に当院からの返信がない場合には、お電話(TEL
+              03-1234-5678)にてお問い合わせ下さい。
+            </div>
+          </div>
+          <h2 class="section_title sec_contact_web">予約フォーム</h2>
+          <form class="contact_form contact_form_web" action="" id="form">
+            <dl class="contact_dl">
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label for="name"><span>お名前</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="山田　太郎"
+                    required
+                  />
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label for="name2"
+                    ><span class="is_required2">フリガナ</span></label
+                  >
+                </dt>
+                <dd class="contact_form_input">
+                  <input
+                    id="name2"
+                    type="text"
+                    placeholder="ヤマダ　タロウ"
+                    required
+                  />
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label for="tel"><span>電話番号</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <input
+                    id="tel"
+                    type="tel"
+                    placeholder="000-0000-0000"
+                    required
+                  />
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label for="email"><span>メールアドレス</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="xxx@example.com"
+                    required
+                  />
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label><span>初診/再診</span></label>
+                </dt>
+                <dd class="contact_form_input web_contact_form_input_radio">
+                  <label class="contact_form_radio web_contact_form_radio">
+                    <input
+                      type="radio"
+                      value="first"
+                      name="first"
+                      class="contact_radio"
+                      checked
+                    />
+                    <span class="contact_radio_button">初診</span>
+                  </label>
+                  <label class="contact_form_radio">
+                    <input
+                      type="radio"
+                      value="visit"
+                      name="first"
+                      class="contact_radio"
+                    />
+                    <span class="contact_radio_button">再診</span>
+                  </label>
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label>
+                    <div class="contact_form_medical">
+                      <span>診療内容</span>
+                      <p class="how_medical">※(複数選択可)</p>
+                    </div>
+                  </label>
+                </dt>
+                <dd class="contact_form_input web_contact_form_input_check">
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">虫歯</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">被せ物がとれた</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">矯正歯科</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">咬み合わせ</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">歯周病</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">小児歯科</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">入れ歯</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">インプラント</span>
+                  </label>
+                  <label class="contact_checkbox">
+                    <input
+                      name="medical"
+                      type="checkbox"
+                      class="contact_checkbox_box"
+                      required
+                    />
+                    <span class="contact_checkbox_item">その他</span>
+                  </label>
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label><span>ご連絡方法</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <div class="contact_select_wrap">
+                    <select
+                      name="select"
+                      id="select"
+                      class="contact_select"
+                      required
+                    >
+                      <option value="" selected>選択してください</option>
+                      <option value="">メール</option>
+                      <option value="">電話</option>
+                    </select>
+                  </div>
+                </dd>
+              </div>
+              <div class="contact_dl_row">
+                <dt class="contact_form_label">
+                  <label><span>希望日</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <div class="contact_form_calendar">
+                    <input
+                      placeholder="年 / 月 / 日"
+                      type="text"
+                      name="day"
+                      id="js-flatpickr"
+                      class="day"
+                      required
+                    />
+                  </div>
+                  <div class="contact_form_calendar">
+                    <input
+                      placeholder="年 / 月 / 日"
+                      type="text"
+                      name="day"
+                      id="js-flatpickr"
+                      class="day"
+                      required
+                    />
+                  </div>
+                  <div class="contact_form_calendar">
+                    <input
+                      placeholder="年 / 月 / 日"
+                      type="text"
+                      name="day"
+                      id="js-flatpickr"
+                      class="day"
+                      required
+                    />
+                  </div>
+                </dd>
+              </div>
+              <div class="contact_dl_row contact_textarea">
+                <dt class="contact_form_label">
+                  <label for="message"><span>お問い合わせ内容</span></label>
+                </dt>
+                <dd class="contact_form_input">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="ご自由にご記入ください。"
+                    required
+                  ></textarea>
+                </dd>
+              </div>
+            </dl>
+            <div class="contact_form_button_wrap">
+              <button
+                type="submit"
+                class="contact_form_button"
+                id="form_button"
+              >
+                送信
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_bg">
+        <img src="/images/common/wave.svg" alt="bg" />
+      </div>
+      <div class="footer_inner">
+        <div class="footer_container">
+          <div class="footer_contents">
+            <div class="footer_contents_left">
+              <div class="footer_logo">
+                <img src="/images/common/logo.svg" alt="logo" />
+              </div>
+              <p class="footer_address">
+                〒166-0001&nbsp;&nbsp;&nbsp;東京都杉並区阿佐谷北7-3-1
+              </p>
+              <p class="footer_tel">03-1234-5678</p>
+              <span class="footer_hours">(年中無休 AM9:00〜PM22:00)</span>
+              <div class="footer_button_wrap">
+                <div class="footer_web_button">
+                  <a href="web.html"> WEB予約 </a>
+                </div>
+                <div class="footer_contact_button">
+                  <a href="contact.html"> お問い合わせ </a>
+                </div>
+              </div>
+              <div class="footer_timetable">
+                <img
+                  src="/images/common/medical-time-pc@2x.png"
+                  alt="timetable"
+                />
+              </div>
+            </div>
+            <div class="footer_contents_right">
+              <div class="footer_map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24933.85841961636!2d139.5810079454924!3d38.63203903877637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1626608818911!5m2!1sja!2sjp"
+                  width="385"
+                  height="385"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_top">
+            <a href="index.html">TOP</a>
+          </div>
+          <div class="footer_about">
+            <p>当院について</p>
+            <ul>
+              <li><a href="about.html#pokicy">ポリシーと特徴</a></li>
+              <li><a href="about.html#gallery">当院の様子</a></li>
+            </ul>
+          </div>
+          <div class="footer_staff">
+            <p>スタッフ紹介</p>
+            <ul>
+              <li><a href="staff.html#director">院長のあいさつ</a></li>
+              <li><a href="staff.html#staff_introduction">スタッフ</a></li>
+              <li><a href="blog.html">スタッフブログ</a></li>
+            </ul>
+          </div>
+          <div class="footer_medical">
+            <p>診療内容</p>
+            <div class="footer_medical_wrap">
+              <ul>
+                <li><a href="medical.html#general_01">一般歯科</a></li>
+                <li><a href="medical.html#general_02">小児歯科</a></li>
+                <li><a href="medical.html#general_03">予防歯科</a></li>
+                <li><a href="medical.html#general_04">入れ歯</a></li>
+              </ul>
+              <ul>
+                <li><a href="medical.html#general_05">矯正歯科</a></li>
+                <li><a href="medical.html#general_06">ホワイトニング</a></li>
+                <li><a href="medical.html#general_07">口腔外科</a></li>
+                <li><a href="medical.html#general_08">レーザー治療</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_contact">
+            <p>お問い合わせ</p>
+            <ul>
+              <li><a href="contact.html">お問い合わせフォーム</a></li>
+              <li><a href="web.html">WEB予約</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copy">
+          <p>©︎2020-2021 みなみ歯科クリニック</p>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="to_top" id="page_top">
+      <img src="/images/common/totop.png" alt="to_top" />
+    </a>
+  </body>
+</html>
